@@ -1,6 +1,5 @@
 # AWS Configuration
 aws_region  = "us-east-1"
-aws_profile = "ganesh"
 
 # Infrastructure IDs (update with your actual resource IDs)
 vpc_id            = "vpc-0f89a34c628550eab"
