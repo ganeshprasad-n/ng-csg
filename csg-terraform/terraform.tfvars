@@ -9,7 +9,7 @@ security_group_id = "sg-06efa6855996f78de"
 
 # EC2 Configuration
 ami_id              = "ami-00fee0ea85a548b80"
-instance_type       = "t3.medium"
+instance_type       = "t3.small"
 key_name           = "pfinternal"
 eip_allocation_id  = "eipalloc-04506b20f4e4b2761"
 
