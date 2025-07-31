@@ -1,0 +1,51 @@
+# Ignore local .terraform directories (provider binaries, modules)
+**/.terraform/
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Lock file for Terraform state to prevent concurrent state changes
+.terraform.tfstate.lock.info
+
+# Crash log files for Terraform
+crash.log
+crash.*.log
+
+# Override files (used for local testing/debugging, not usually committed)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI config files (local user configuration)
+.terraformrc
+terraform.rc
+
+# Ignore Terraform plan output files (optional, if you commit plans, remove these)
+*.tfplan*
+
+# VS Code settings directory (user-specific IDE config)
+.vscode/
+
+# Windows system files
+**/.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS system files (if anyone uses Mac to access repo)
+**/.DS_Store
+
+# JetBrains IDE settings (if used)
+.idea/
+
+# Node modules if any (just in case)
+node_modules/
+
+# Python cache files (if any python scripts included)
+__pycache__/
+*.py[cod]
+
+# Logs
+*.log
