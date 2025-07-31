@@ -8,11 +8,11 @@ security_group_id = "sg-06efa6855996f78de"
 
 # EC2 Configuration
 ami_id              = "ami-00fee0ea85a548b80"
-instance_type       = "t3.small"
+instance_type       = "t3.medium"
 key_name           = "pfinternal"
 eip_allocation_id  = "eipalloc-04506b20f4e4b2761"
 
 # Tagging
 environment   = "dev"
 project       = "jenkins"
-instance_name = "Jenkins-Refactoring-testing"
+instance_name = "Jenkins-Refactoring"
