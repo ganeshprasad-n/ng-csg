@@ -19,7 +19,7 @@ pipeline {
                     credentialsId: 'UAT'
                 ]]) {
                     dir('csg-terraform') {
-                        sh 'terraform init -reconfigure -input=false'
+                        sh 'terraform init -input=false'
                     }
                 }
             }
