@@ -1,5 +1,7 @@
 # Ignore local .terraform directories (provider binaries, modules)
 **/.terraform/
+.terraform/
+.terraform*
 
 # Terraform state files
 *.tfstate
