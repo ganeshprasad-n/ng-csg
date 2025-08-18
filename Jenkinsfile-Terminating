@@ -1,0 +1,51 @@
+pipeline {
+    agent any
+
+    environment {
+        AWS_DEFAULT_REGION = 'us-east-1'
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git branch: 'main', url: 'https://github.com/ganeshprasad-n/ng-csg.git'
+            }
+        }
+
+        stage('Terraform Init') {
+            steps {
+                withCredentials([[
+                    $class: 'AmazonWebServicesCredentialsBinding',
+                    credentialsId: 'UAT'
+                ]]) {
+                    dir('csg-terraform') {
+                        sh 'terraform init -input=false'
+                    }
+                }
+            }
+        }
+
+        stage('Terraform Destroy') {
+            steps {
+                input message: 'Approve destroy in UAT? This will delete all infra!'
+                withCredentials([[
+                    $class: 'AmazonWebServicesCredentialsBinding',
+                    credentialsId: 'UAT'
+                ]]) {
+                    dir('csg-terraform') {
+                        sh 'terraform destroy -auto-approve'
+                    }
+                }
+            }
+        }
+    }
+
+    post {
+        always {
+            echo 'Terraform destroy pipeline finished.'
+        }
+        failure {
+            echo 'Terraform destroy failed!'
+        }
+    }
+}
