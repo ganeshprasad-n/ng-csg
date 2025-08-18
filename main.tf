@@ -25,10 +25,6 @@ resource "aws_instance" "jenkins_server" {
     Environment = var.environment
     ManagedBy   = "terraform"
   }
-
-  lifecycle {
-    create_before_destroy = true
-  }
 }
 
 # EIP Association
