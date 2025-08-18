@@ -1,7 +1,6 @@
 1. terraform init   &  terraform validate
 
-2. cp terraform.tfvars.example terraform.tfvars
-# Edit terraform.tfvars with your actual values
+2. Edit terraform.tfvars with your actual values
 
 3. terraform plan
 

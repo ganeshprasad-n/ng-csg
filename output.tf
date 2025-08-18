@@ -11,5 +11,5 @@ output "instance_private_ip" {
 }
 
 output "attached_eip" {
-  value       = data.aws_eip.existing_eip.public_ip
+  value = data.aws_eip.existing_eip.public_ip
 }
