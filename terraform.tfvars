@@ -1,5 +1,5 @@
 # AWS Region
-aws_region      = "us-east-2"
+aws_region      = "us-east-1"
 #aws_profile    = "ganesh"
 
 # Infrastructure IDs
