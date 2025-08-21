@@ -5,7 +5,7 @@ aws_region      = "us-east-1"
 # Infrastructure IDs
 existing_vpc_id     = "vpc-0f89a34c628550eab"
 existing_subnet_id  = "subnet-009eb33bc0b8c6ec5"
-existing_SG_id      = "sg-0ea037364d1f9ddcc"
+existing_SG_id      = "sg-06efa6855996f78de"
 
 # EC2 Configuration
 existing_ami_id     = "ami-00fee0ea85a548b80"
