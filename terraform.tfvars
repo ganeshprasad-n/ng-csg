@@ -16,4 +16,4 @@ instance_name       = "Jenkins-Refactoring"
 environment         = "UAT"
 
 #EIP association
-existing_eip_allocation_id  = "eipalloc-05847574ebc607156"
+existing_eip_allocation_id  = "eipalloc-0d005665eb81d324e"
