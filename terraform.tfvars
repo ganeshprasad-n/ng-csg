@@ -9,7 +9,7 @@ existing_SG_id      = "sg-0ea037364d1f9ddcc"
 
 # EC2 Configuration
 existing_ami_id     = "ami-0169aa51f6faf20d5"
-instance_type       = "t2.micro"
+instance_type       = "t2.small"
 existing_key_name   = "key13052025ohio"
 # Tagging
 instance_name       = "Jenkins-Refactoring"
