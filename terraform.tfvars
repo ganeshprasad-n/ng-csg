@@ -9,7 +9,7 @@ existing_SG_id      = "sg-06efa6855996f78de"
 
 # EC2 Configuration
 existing_ami_id     = "ami-00fee0ea85a548b80"
-instance_type       = "tx.large"
+instance_type       = "t2.small"
 existing_key_name   = "pfinternal"
 # Tagging
 instance_name       = "Jenkins-Refactoring"
