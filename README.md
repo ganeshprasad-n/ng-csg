@@ -1,12 +1,11 @@
-1. terraform init   &  terraform validate
+terraform init & terraform init -reconfigure
 
-2. cp terraform.tfvars.example terraform.tfvars
-# Edit terraform.tfvars with your actual values
+terraform validate
 
-3. terraform plan
+terraform plan -out=tfplan
 
-4. terraform apply
+terraform apply -auto-approve tfplan
 
-5. terraform destroy
+terraform destroy -auto-approve
 
 
