@@ -1,13 +1,13 @@
 #!/bin/bash
 ###############################################################################
-# Script Name : jenkins.sh
+# Script Name : jenkins-launching.sh
 # Version     : 1.0
 # Author      : Ganeshprasad N
 # Created     : 11 August 2025
 # Description : Simple script to run Terraform commands in Jenkins,
-#				This script runs inside Jenkins Freestyle job
+#				        This script runs inside Jenkins Freestyle job
 #               It launches Jenkins build machine in pfinternal AWS account using Terraform
-# Usage       : ./jenkins.sh
+# Usage       : sh jenkins-launching.sh
 # Notes       : Make sure you are authenticated to AWS.
 ###############################################################################
 
