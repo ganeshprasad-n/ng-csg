@@ -8,7 +8,7 @@ existing_subnet_id  = "subnet-009eb33bc0b8c6ec5"
 existing_SG_id      = "sg-06efa6855996f78de"
 
 # EC2 Configuration
-existing_ami_id     = "ami-00d372283953679f6"
+existing_ami_id     = "ami-048e87e8dc20c0098"
 instance_type       = "t3.xlarge"
 existing_key_name   = "pfinternal"
 # Tagging
